@@ -48,6 +48,8 @@ app.get("/test", async (req, res) => {
 //devuelve true si existe el mail
 app.get("/exist", async (req, res) => {
   const { email } = req.query;
+  
+  
   userController
     .findByEmail(email)
     .then((r) => {
