@@ -1,4 +1,3 @@
-console.log("Holaaa");
 import {Sequelize} from "sequelize";
 
 export const sequelize = new Sequelize({
@@ -17,3 +16,13 @@ export const sequelize = new Sequelize({
       },
     },
 });
+async function main() {
+  try {
+    await sequelize.authenticate();
+    console.log('Connection has been established successfully.');
+  } catch (error) {
+    console.error('Unable to connect to the database:', error);
+  }
+}
+main();
+console.log("Soy la base de datos",sequelize);

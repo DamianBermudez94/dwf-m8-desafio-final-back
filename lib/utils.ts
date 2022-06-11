@@ -11,9 +11,12 @@ export const authMiddleware = (req, res, next) => {
   try {
     const data = jwt.verify(token, SECRET);
     req._user = data;
+    console.log("soy la data",data);
+    
     next();
   } catch {}
 };
+console.log("soy el secret",SECRET);
 
 export { SECRET };
 
@@ -28,6 +31,7 @@ export const bodyToItemAlgolia = (petId, body, petData, imagen) => {
     };
     respuesta.founded = body?.founded || petData.founded;
     respuesta.objectID = petId;
+    console.log("soy la respuesta",respuesta);
   
     return respuesta;
   };
@@ -42,6 +46,7 @@ export const bodyToItemAlgolia = (petId, body, petData, imagen) => {
       (respuesta.founded = body?.founded || petData.founded);
     respuesta.objectID = petId;
     respuesta.userId = petData.userId;
+  console.log("soy la respuesta",respuesta);
   
     return respuesta;
   };

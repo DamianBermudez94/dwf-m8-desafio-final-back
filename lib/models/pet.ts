@@ -14,3 +14,4 @@ Pet.init(
   },
   { sequelize, modelName: "pet" }
 );
+console.log("soy el pet",Pet);

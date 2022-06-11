@@ -11,3 +11,4 @@ Report.init(
   },
   { sequelize, modelName: "report" }
 );
+console.log("soy el report",Report);

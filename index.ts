@@ -35,6 +35,8 @@ app.use(express.json({ limit: "100mb" }));
 // app.use(cors());
 
 const allowedHosts = ["http://127.0.0.1:8080", "https://buscador-de-animales.web.app"];
+console.log("spy",allowedHosts);
+
 app.use(
   cors({
     origin: allowedHosts,

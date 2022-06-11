@@ -10,3 +10,4 @@ User.init(
   },
   { sequelize, modelName: "user" }
 );
+console.log("soy los user",User);

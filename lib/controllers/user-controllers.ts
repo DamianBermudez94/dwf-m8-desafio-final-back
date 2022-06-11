@@ -13,6 +13,8 @@ export class UserController {
       email,
       password: getSHA256(password),
     });
+    console.log("soy el user",user);
+    
     return user;
   }
   async getMe(userId) {

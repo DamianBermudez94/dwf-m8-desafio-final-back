@@ -5,6 +5,7 @@ cloudinary.config({
     api_key: '868729874872135', 
     api_secret: 'tgcHmEwg2fXdLxDNKEMGDx9dcCY' 
 });
+console.log("Hola!, soy cloudinary",cloudinary);
 
 export {
     cloudinary

@@ -10,6 +10,8 @@ export class ReportController {
       message,
       petId,
     });
+    console.log("soy el newReport",newReport);
+    
     return newReport;
   }
 }
