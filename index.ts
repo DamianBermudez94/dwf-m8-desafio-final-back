@@ -35,7 +35,7 @@ app.use(express.json({ limit: "100mb" }));
 // app.use(cors());
 
 const allowedHosts = ["http://127.0.0.1:8080", "https://dwf-m8-desafio-final.web.app"];
-console.log("spy",allowedHosts);
+
 
 app.use(
   cors({
